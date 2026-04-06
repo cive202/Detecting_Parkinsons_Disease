@@ -5,28 +5,22 @@ The app has two parts:
 1. **Flask ML API** (`api/`) — loads `parkinson_models.joblib` and serves `/predict` and `/health`.
 2. **Next.js UI** (`UI/`) — calls `/api/predict` on the same origin; that route proxies to Flask when `FLASK_API_URL` is set.
 
-Deploy the API first, then point the frontend at it.
+Deploy the API first on Render, then point the Vercel frontend at it.
 
 ---
 
-## 1. Deploy the Flask API (Docker)
+## 1. Deploy the Flask API on Render (native Python)
 
-The repo includes `api/Dockerfile` and `render.yaml` for [Render](https://render.com).
+The repo includes `render.yaml` as a [Render Blueprint](https://render.com/docs/blueprint-spec). It uses **Python** (not Docker): **root directory** `api`, `pip install -r requirements.txt`, and **Gunicorn** bound to `$PORT`.
 
-1. Push this repository to GitHub (or GitLab/Bitbucket supported by your host).
-2. On Render: **New → Blueprint**, connect the repo, and apply `render.yaml`, **or** create a **Web Service** manually:
-   - **Environment**: Docker
-   - **Dockerfile path**: `api/Dockerfile`
-   - **Docker build context**: `api`
-3. Ensure `api/models/parkinson_models.joblib` is in the repo (or set `PARKINSON_MODEL_PATH` to a mounted path your platform supports).
+1. Push this repository to GitHub (or another Git provider Render supports).
+2. In Render: **New → Blueprint**, connect the repo, and apply `render.yaml`, **or** create a **Web Service** manually:
+   - **Language**: Python 3
+   - **Root directory**: `api`
+   - **Build command**: `pip install -r requirements.txt`
+   - **Start command**: `gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 2 --timeout 120 app:app`
+3. Ensure `api/models/parkinson_models.joblib` is in the repo (or set `PARKINSON_MODEL_PATH` to a path your service can read).
 4. After deploy, open `https://<your-service>.onrender.com/health` — you should see `"status":"ok"` and `"model":"loaded"`.
-
-**Alternatives:** Any container host works (Railway, Fly.io, Google Cloud Run, AWS ECS). Build from the `api/` directory:
-
-```bash
-docker build -t parkinsons-api ./api
-docker run -p 5000:5000 -e PORT=5000 parkinsons-api
-```
 
 ---
 
@@ -38,9 +32,9 @@ docker run -p 5000:5000 -e PORT=5000 parkinsons-api
 
    | Name            | Value |
    |-----------------|--------|
-   | `FLASK_API_URL` | `https://<your-api-host>` (no trailing slash) |
+   | `FLASK_API_URL` | `https://<your-render-service>.onrender.com` (no trailing slash) |
 
-4. Deploy. The UI calls `/api/predict` on the Vercel deployment; the serverless route forwards JSON to `${FLASK_API_URL}/predict`.
+4. Deploy. The UI calls `/api/predict` on the Vercel deployment; that route forwards JSON to `${FLASK_API_URL}/predict`.
 
 If `FLASK_API_URL` is unset, the app uses a **mock** predictor (not your trained models).
 
@@ -60,8 +54,7 @@ python app.py
 # Terminal 2 — UI
 cd UI
 npm install
-# .env.local:
-# FLASK_API_URL=http://127.0.0.1:5000
+# .env.local: FLASK_API_URL=http://127.0.0.1:5000
 npm run dev
 ```
 

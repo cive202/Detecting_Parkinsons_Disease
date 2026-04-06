@@ -1,13 +1,14 @@
-# Render Blueprint: deploy the Flask ML API as a Docker web service.
+# Render Blueprint: Flask API from api/ using native Python (no Docker).
 # https://render.com/docs/blueprint-spec
 #
-# After deploy, copy the service URL and set it on Vercel as FLASK_API_URL (no trailing slash).
+# After deploy, set Vercel env FLASK_API_URL to this service URL (no trailing slash).
 
 services:
   - type: web
     name: parkinsons-api
-    runtime: docker
-    dockerfilePath: ./api/Dockerfile
-    dockerContext: ./api
+    runtime: python
+    rootDir: api
     plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 2 --timeout 120 app:app
     healthCheckPath: /health

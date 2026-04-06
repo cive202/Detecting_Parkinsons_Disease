@@ -1,9 +1,0 @@
-__pycache__
-*.py[cod]
-.venv
-venv
-.git
-.gitignore
-*.md
-.env
-.env.*

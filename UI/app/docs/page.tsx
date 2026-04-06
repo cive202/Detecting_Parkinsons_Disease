@@ -117,13 +117,13 @@ export default function Documentation() {
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
         <Card className="mb-6 border-slate-200 bg-white/80">
           <CardHeader className="pb-2">
-            <CardTitle className="text-base">Notebook pipeline (reproducible export)</CardTitle>
+            <CardTitle className="text-base">Notebook pipeline (documented metrics)</CardTitle>
             <CardDescription>
               PCA retains {docMeta.pipeline?.pca_variance_ratio ?? 0.95} variance ({docMeta.pipeline?.pca_n_components ?? '—'}{' '}
               components), hold-out test_size {docMeta.pipeline?.train_test_split?.test_size ?? 0.2}, random_state{' '}
-              {docMeta.pipeline?.train_test_split?.random_state ?? 7}. Values below come from{' '}
-              <code className="rounded bg-slate-100 px-1">scripts/export_notebook_docs_metrics.py</code> (see{' '}
-              <code className="rounded bg-slate-100 px-1">notebook-docs-metrics.json</code> for deviations vs a given notebook run).
+              {docMeta.pipeline?.train_test_split?.random_state ?? 7}. Charts and tables below use committed{' '}
+              <code className="rounded bg-slate-100 px-1">notebook-docs-metrics.json</code> (see{' '}
+              <code className="rounded bg-slate-100 px-1">meta.deviations_from_notebook</code> for notes vs a given notebook run).
             </CardDescription>
           </CardHeader>
         </Card>
