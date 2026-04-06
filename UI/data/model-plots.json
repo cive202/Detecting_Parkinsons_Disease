@@ -1,0 +1,984 @@
+{
+  "source": "Detecting_Parkinson’s_Disease_.ipynb",
+  "images_manifest": "UI/data/notebook-images.manifest.json",
+  "public_base": "/docs",
+  "general": [
+    {
+      "filename": "cell-0015-out-0.png",
+      "cell_index": 15,
+      "output_index": 0,
+      "kind": "distribution"
+    },
+    {
+      "filename": "cell-0016-out-0.png",
+      "cell_index": 16,
+      "output_index": 0,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-1.png",
+      "cell_index": 16,
+      "output_index": 1,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-2.png",
+      "cell_index": 16,
+      "output_index": 2,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-3.png",
+      "cell_index": 16,
+      "output_index": 3,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-4.png",
+      "cell_index": 16,
+      "output_index": 4,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-5.png",
+      "cell_index": 16,
+      "output_index": 5,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-6.png",
+      "cell_index": 16,
+      "output_index": 6,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-7.png",
+      "cell_index": 16,
+      "output_index": 7,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-8.png",
+      "cell_index": 16,
+      "output_index": 8,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-9.png",
+      "cell_index": 16,
+      "output_index": 9,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-10.png",
+      "cell_index": 16,
+      "output_index": 10,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-11.png",
+      "cell_index": 16,
+      "output_index": 11,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-12.png",
+      "cell_index": 16,
+      "output_index": 12,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-13.png",
+      "cell_index": 16,
+      "output_index": 13,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-14.png",
+      "cell_index": 16,
+      "output_index": 14,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-15.png",
+      "cell_index": 16,
+      "output_index": 15,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-16.png",
+      "cell_index": 16,
+      "output_index": 16,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-17.png",
+      "cell_index": 16,
+      "output_index": 17,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-18.png",
+      "cell_index": 16,
+      "output_index": 18,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-19.png",
+      "cell_index": 16,
+      "output_index": 19,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-20.png",
+      "cell_index": 16,
+      "output_index": 20,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-21.png",
+      "cell_index": 16,
+      "output_index": 21,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0016-out-22.png",
+      "cell_index": 16,
+      "output_index": 22,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-0.png",
+      "cell_index": 17,
+      "output_index": 0,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-1.png",
+      "cell_index": 17,
+      "output_index": 1,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-2.png",
+      "cell_index": 17,
+      "output_index": 2,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-3.png",
+      "cell_index": 17,
+      "output_index": 3,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-4.png",
+      "cell_index": 17,
+      "output_index": 4,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-5.png",
+      "cell_index": 17,
+      "output_index": 5,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-6.png",
+      "cell_index": 17,
+      "output_index": 6,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-7.png",
+      "cell_index": 17,
+      "output_index": 7,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-8.png",
+      "cell_index": 17,
+      "output_index": 8,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-9.png",
+      "cell_index": 17,
+      "output_index": 9,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-10.png",
+      "cell_index": 17,
+      "output_index": 10,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-11.png",
+      "cell_index": 17,
+      "output_index": 11,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-12.png",
+      "cell_index": 17,
+      "output_index": 12,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-13.png",
+      "cell_index": 17,
+      "output_index": 13,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-14.png",
+      "cell_index": 17,
+      "output_index": 14,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-15.png",
+      "cell_index": 17,
+      "output_index": 15,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-16.png",
+      "cell_index": 17,
+      "output_index": 16,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-17.png",
+      "cell_index": 17,
+      "output_index": 17,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-18.png",
+      "cell_index": 17,
+      "output_index": 18,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-19.png",
+      "cell_index": 17,
+      "output_index": 19,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-20.png",
+      "cell_index": 17,
+      "output_index": 20,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0017-out-21.png",
+      "cell_index": 17,
+      "output_index": 21,
+      "kind": "label_distribution"
+    },
+    {
+      "filename": "cell-0018-out-0.png",
+      "cell_index": 18,
+      "output_index": 0,
+      "kind": "distribution"
+    }
+  ],
+  "models": [
+    {
+      "model": "Bernoulli NB",
+      "slug": "bernoulli-nb",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Decision Tree",
+      "slug": "decision-tree",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        },
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Gaussian NB",
+      "slug": "gaussian-nb",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "KNN",
+      "slug": "knn",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        },
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "KNN (k=3)",
+      "slug": "knn-k-3",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Logistic Regression",
+      "slug": "logistic-regression",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        },
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Naive Bayes",
+      "slug": "naive-bayes",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        }
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "slug": "random-forest",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        },
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Random Forest (entropy)",
+      "slug": "random-forest-entropy",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Random Forest (gini)",
+      "slug": "random-forest-gini",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "SVM",
+      "slug": "svm",
+      "plots": [
+        {
+          "filename": "cell-0027-out-1.png",
+          "cell_index": 27,
+          "output_index": 1,
+          "kind": "plot"
+        },
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "Voting ensemble",
+      "slug": "voting-ensemble",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    },
+    {
+      "model": "XGBoost",
+      "slug": "xgboost",
+      "plots": [
+        {
+          "filename": "cell-0038-out-0.png",
+          "cell_index": 38,
+          "output_index": 0,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-1.png",
+          "cell_index": 39,
+          "output_index": 1,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-3.png",
+          "cell_index": 39,
+          "output_index": 3,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-5.png",
+          "cell_index": 39,
+          "output_index": 5,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-7.png",
+          "cell_index": 39,
+          "output_index": 7,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-9.png",
+          "cell_index": 39,
+          "output_index": 9,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-11.png",
+          "cell_index": 39,
+          "output_index": 11,
+          "kind": "roc"
+        },
+        {
+          "filename": "cell-0039-out-13.png",
+          "cell_index": 39,
+          "output_index": 13,
+          "kind": "roc"
+        }
+      ]
+    }
+  ],
+  "overrides": {
+    "modelSlugAliases": {}
+  }
+}

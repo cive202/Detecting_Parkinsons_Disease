@@ -1,0 +1,455 @@
+{
+  "notebook": "Detecting_Parkinson’s_Disease_.ipynb",
+  "out_dir": "UI\\public\\docs",
+  "count": 56,
+  "images": [
+    {
+      "filename": "cell-0015-out-0.png",
+      "cell_index": 15,
+      "output_index": 0,
+      "mime": "image/png",
+      "context_before": "df\n\ndf[\"status\"].value_counts()",
+      "context_after": "# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)\n\n# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)"
+    },
+    {
+      "filename": "cell-0016-out-0.png",
+      "cell_index": 16,
+      "output_index": 0,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-1.png",
+      "cell_index": 16,
+      "output_index": 1,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-2.png",
+      "cell_index": 16,
+      "output_index": 2,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-3.png",
+      "cell_index": 16,
+      "output_index": 3,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-4.png",
+      "cell_index": 16,
+      "output_index": 4,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-5.png",
+      "cell_index": 16,
+      "output_index": 5,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-6.png",
+      "cell_index": 16,
+      "output_index": 6,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-7.png",
+      "cell_index": 16,
+      "output_index": 7,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-8.png",
+      "cell_index": 16,
+      "output_index": 8,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-9.png",
+      "cell_index": 16,
+      "output_index": 9,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-10.png",
+      "cell_index": 16,
+      "output_index": 10,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-11.png",
+      "cell_index": 16,
+      "output_index": 11,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-12.png",
+      "cell_index": 16,
+      "output_index": 12,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-13.png",
+      "cell_index": 16,
+      "output_index": 13,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-14.png",
+      "cell_index": 16,
+      "output_index": 14,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-15.png",
+      "cell_index": 16,
+      "output_index": 15,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-16.png",
+      "cell_index": 16,
+      "output_index": 16,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-17.png",
+      "cell_index": 16,
+      "output_index": 17,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-18.png",
+      "cell_index": 16,
+      "output_index": 18,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-19.png",
+      "cell_index": 16,
+      "output_index": 19,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-20.png",
+      "cell_index": 16,
+      "output_index": 20,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-21.png",
+      "cell_index": 16,
+      "output_index": 21,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0016-out-22.png",
+      "cell_index": 16,
+      "output_index": 22,
+      "mime": "image/png",
+      "context_before": "df[\"status\"].value_counts()\n\n#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()",
+      "context_after": "# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)\n\n# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()"
+    },
+    {
+      "filename": "cell-0017-out-0.png",
+      "cell_index": 17,
+      "output_index": 0,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-1.png",
+      "cell_index": 17,
+      "output_index": 1,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-2.png",
+      "cell_index": 17,
+      "output_index": 2,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-3.png",
+      "cell_index": 17,
+      "output_index": 3,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-4.png",
+      "cell_index": 17,
+      "output_index": 4,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-5.png",
+      "cell_index": 17,
+      "output_index": 5,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-6.png",
+      "cell_index": 17,
+      "output_index": 6,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-7.png",
+      "cell_index": 17,
+      "output_index": 7,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-8.png",
+      "cell_index": 17,
+      "output_index": 8,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-9.png",
+      "cell_index": 17,
+      "output_index": 9,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-10.png",
+      "cell_index": 17,
+      "output_index": 10,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-11.png",
+      "cell_index": 17,
+      "output_index": 11,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-12.png",
+      "cell_index": 17,
+      "output_index": 12,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-13.png",
+      "cell_index": 17,
+      "output_index": 13,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-14.png",
+      "cell_index": 17,
+      "output_index": 14,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-15.png",
+      "cell_index": 17,
+      "output_index": 15,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-16.png",
+      "cell_index": 17,
+      "output_index": 16,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-17.png",
+      "cell_index": 17,
+      "output_index": 17,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-18.png",
+      "cell_index": 17,
+      "output_index": 18,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-19.png",
+      "cell_index": 17,
+      "output_index": 19,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-20.png",
+      "cell_index": 17,
+      "output_index": 20,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0017-out-21.png",
+      "cell_index": 17,
+      "output_index": 21,
+      "mime": "image/png",
+      "context_before": "#Check Label Imbalance\n\nimport matplotlib.pyplot as plt\nimport seaborn as sns\n\nsns.countplot(x=\"status\", data=df, palette=\"Set2\")\nplt.title(\"Label Distribution (0 = Healthy, 1 = Parkinson's)\")\nplt.xlabel(\"Status\")\nplt.ylabel(\"Count\")\nplt.show()\n\n# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)",
+      "context_after": "# Finding Correlations\n\nplt.figure(figsize=(20, 20))\n\n# Drop the 'name' column (non-numeric)\ncorr = df.drop(columns=['name']).corr()\n\nsns.heatmap(corr, annot=True, fmt=\".2f\", cmap=\"coolwarm\", linewidths=0.5)\nplt.title(\"Feature Correlation Heatmap\")\nplt.tight_layout()\nplt.show()\n\n# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]"
+    },
+    {
+      "filename": "cell-0018-out-0.png",
+      "cell_index": 18,
+      "output_index": 0,
+      "mime": "image/png",
+      "context_before": "# Find the distribution of data\n\ndef distplots(col):\n    sns.histplot(df[col])\n    plt.show()\n    \nfor i in list(df.columns)[1:]:\n    distplots(i)\n\n# Find the distribution of data\n\ndef boxplots(col):\n    sns.boxplot(df[col])\n    plt.show()\n    \nfor i in list(df.select_dtypes(exclude=[\"object\"]).columns)[1:]:\n    boxplots(i)",
+      "context_after": "# Lets make some final changes to the data \n\n# Seperate independent and dependent variables and drop the ID column\nx=df.drop([\"status\",\"name\"],axis=1)\ny=df[\"status\"]\n\n# Lets detect the label balance\nfrom imblearn.over_sampling import RandomOverSampler\nfrom imblearn.under_sampling import RandomUnderSampler\nfrom collections import Counter\n\nprint(Counter(y))"
+    },
+    {
+      "filename": "cell-0027-out-1.png",
+      "cell_index": 27,
+      "output_index": 1,
+      "mime": "image/png",
+      "context_before": "Now split the Dataset in to Train and Test and make use of algorithms such as logistic regression, decision Tree, random forest, Svm,Gaussian Naive Bayes, Bernoulli Naive Bayes, KNN. and study the Accuracy of each model and predict the disease.\n\n#Now,split the dataset into training and testing sets keeping 20% of the data for testing.\n#Split the dataset\nx_train,x_test,y_train,y_test=train_test_split(X_PCA, y, test_size=0.2, random_state=7)",
+      "context_after": "#Initialize an XGBClassifier and train the model.\n#This classifies using eXtreme Gradient Boosting- using gradient boosting algorithms for modern data science problems. \n#It falls under the category of Ensemble Learning in ML, \n#where we train and predict using many models to produce one superior output.\n#Train the model\nmodel_xg=XGBClassifier()\nmodel_xg.fit(x_train,y_train)\n\n#Finally, generate y_pred (predicted values for x_test) and calculate the accuracy for the model. \n#Print it out.\n#Calculate the accuracy\ny_pred=model_xg.predict(x_test)\nprint(accuracy_score(y_test, y_pred)*100)"
+    },
+    {
+      "filename": "cell-0038-out-0.png",
+      "cell_index": 38,
+      "output_index": 0,
+      "mime": "image/png",
+      "context_before": "for i in list3:\n    print(\"****************************************** \",i,\" **********************************************\")\n    print(classification_report(y_test, i.predict(x_test)))\n    print('Confusion Matrix:')\n    print(cm)\n    print()\n\n# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()",
+      "context_after": "for i in range(0,len(list3)):\n    try:\n        print()\n        print(\"------------------ROC FOR \",list1[i],\" + PCA ---------------------------\")\n        plot_roc(list3[i], x_test, np.array(y_test))\n        print()\n    except:\n        print(\"roc not valid\")\n\nfrom pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-1.png",
+      "cell_index": 39,
+      "output_index": 1,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-3.png",
+      "cell_index": 39,
+      "output_index": 3,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-5.png",
+      "cell_index": 39,
+      "output_index": 5,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-7.png",
+      "cell_index": 39,
+      "output_index": 7,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-9.png",
+      "cell_index": 39,
+      "output_index": 9,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-11.png",
+      "cell_index": 39,
+      "output_index": 11,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    },
+    {
+      "filename": "cell-0039-out-13.png",
+      "cell_index": 39,
+      "output_index": 13,
+      "mime": "image/png",
+      "context_before": "# Visualizing performance with ROC\n\nfrom sklearn.metrics import roc_curve, auc, confusion_matrix, classification_report,accuracy_score\n\ndef plot_roc(model, X_test, y_test):\n    # calculate the fpr and tpr for all thresholds of the classification\n    probabilities = model.predict_proba(np.array(X_test))\n    predictions = probabilities\n    fpr, tpr, threshold = roc_curve(y_test, predictions[:,1])\n    roc_auc = auc(fpr, tpr)\n\n    plt.title('Receiver Operating Characteristic')\n    plt.plot(fpr, tpr, 'b', label='AUC = %0.2f' % roc_auc)\n    plt.legend(loc='lower right')\n    plt.plot([0, 1], [0, 1], 'r--')\n    plt.xlim([0, 1])\n    plt.ylim([0, 1])\n    plt.ylabel('True Positive Rate')\n    plt.xlabel('False Positive Rate')\n    plt.show()\n\nplot_roc(model_xg, x_test, y_test)",
+      "context_after": "from pathlib import Path\nimport joblib\n\nartifacts_dir = Path(\"artifacts\")\nartifacts_dir.mkdir(exist_ok=True)\nout_path = artifacts_dir / \"parkinson_models.joblib\"\n\nfeature_columns = list(df.drop([\"status\", \"name\"], axis=1).columns)\nbundle = {\n    \"feature_columns\": feature_columns,\n    \"scaler\": scaler,\n    \"pca\": pca,\n    \"models\": {\n        \"Logistic Regression\": lr,\n        \"Decision Tree\": dt,\n        \"Random Forest (gini)\": rfi,\n        \"Random Forest (entropy)\": rfe,\n        \"SVM\": model_svm,\n        \"KNN (k=3)\": model_knn3,\n        \"Gaussian NB\": gnb,\n        \"Bernoulli NB\": model,\n        \"Voting ensemble\": model_evc,\n        \"XGBoost\": model_xg,\n    },\n}\njoblib.dump(bundle, out_path)\nprint(f\"Saved {len(bundle['models'])} models to {out_path.resolve()}\")"
+    }
+  ]
+}
