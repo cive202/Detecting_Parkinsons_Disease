@@ -2,7 +2,7 @@
 
 End-to-end **binary classification** project: voice features from the classic **Parkinson's speech dataset** - **dimensionality reduction (PCA)** - **multiple classifiers** - **trained artifact** served by a **Flask API**, with a **Next.js** web UI, interactive **documentation with metrics and ROC curves**, and **Docker / Render / Vercel** deployment paths.
 
-> **Not a medical device.** This repository is for education and portfolio use only. Do not use for diagnosis or clinical decisions.
+> **Not a medical device.** This repository is for education use only. Do not use for diagnosis or clinical decisions.
 
 ---
 
@@ -16,7 +16,6 @@ End-to-end **binary classification** project: voice features from the classic **
 | **UI** | Form for 22 voice features, ensemble-style results; **[live `/docs` with ROC & charts](https://detecting-parkinsons-disease.vercel.app/docs)** (data: `notebook-docs-metrics.json`) |
 | **API** | Flask `/predict` + `/health`; optional proxy via Next.js `POST /api/predict` and `FLASK_API_URL` |
 
-For **resume-ready bullets** and interview talking points, see [`RESUME_PROJECT.md`](RESUME_PROJECT.md).
 
 ---
 
